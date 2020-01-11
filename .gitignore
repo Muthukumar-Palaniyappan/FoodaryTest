@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/slnx.sqlite
+/FoodaryRewardsAPI/FoodaryRewardsAPI/bin/Debug/netcoreapp2.1
+/FoodaryRewardsAPI/FoodaryRewardsAPI/obj
+/FoodaryRewardsAPI/RewardsDataContract/bin/Debug/netcoreapp2.1
+/FoodaryRewardsAPI/RewardsDataContract/obj
+/.vs
+/FoodaryRewardsAPI/.vs

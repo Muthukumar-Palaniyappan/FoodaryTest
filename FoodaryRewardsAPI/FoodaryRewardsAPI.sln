@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodaryRewardsAPI", "FoodaryRewardsAPI\FoodaryRewardsAPI.csproj", "{6F292CFF-C79C-4658-A6D2-DEB92C4619AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RewardsDataContract", "RewardsDataContract\RewardsDataContract.csproj", "{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F292CFF-C79C-4658-A6D2-DEB92C4619AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F292CFF-C79C-4658-A6D2-DEB92C4619AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F292CFF-C79C-4658-A6D2-DEB92C4619AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F292CFF-C79C-4658-A6D2-DEB92C4619AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B454251B-9905-4A36-8AFA-3BB94869178B}
+	EndGlobalSection
+EndGlobal
