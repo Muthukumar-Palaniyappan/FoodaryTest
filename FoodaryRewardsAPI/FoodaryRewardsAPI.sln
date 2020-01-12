@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodaryRewardsAPI", "FoodaryRewardsAPI\FoodaryRewardsAPI.csproj", "{6F292CFF-C79C-4658-A6D2-DEB92C4619AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RewardsDataContract", "RewardsDataContract\RewardsDataContract.csproj", "{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rewards.DataContract", "RewardsDataContract\Rewards.DataContract.csproj", "{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rewards.Data", "Rewards.Data\Rewards.Data.csproj", "{CC00FCF1-D35C-456D-A567-A87D3E63B6A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8C8E6B-C7B2-490E-8B26-41A036AEEC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC00FCF1-D35C-456D-A567-A87D3E63B6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC00FCF1-D35C-456D-A567-A87D3E63B6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC00FCF1-D35C-456D-A567-A87D3E63B6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC00FCF1-D35C-456D-A567-A87D3E63B6A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

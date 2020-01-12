@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RewardsDataContract
+namespace Rewards.DataContract
 {
     public class RewardsResponse
     {

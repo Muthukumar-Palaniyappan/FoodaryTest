@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RewardsDataContract
+namespace Rewards.DataContract
 {
     public class RewardsRequest
     {

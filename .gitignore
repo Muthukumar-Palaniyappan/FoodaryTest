@@ -9,3 +9,5 @@
 /FoodaryRewardsAPI/RewardsDataContract/obj
 /.vs
 /FoodaryRewardsAPI/.vs
+/FoodaryRewardsAPI/Rewards.Data/obj
+/FoodaryRewardsAPI/Rewards.Data/bin/Debug/netcoreapp2.1
