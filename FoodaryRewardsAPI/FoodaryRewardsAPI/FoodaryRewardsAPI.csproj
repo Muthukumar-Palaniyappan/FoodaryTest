@@ -21,8 +21,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Rewards.Business\Rewards.Business.csproj" />
     <ProjectReference Include="..\Rewards.Data\Rewards.Data.csproj" />
     <ProjectReference Include="..\RewardsDataContract\Rewards.DataContract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

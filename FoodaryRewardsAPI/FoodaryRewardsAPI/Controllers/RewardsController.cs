@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Rewards.Business.Interfaces;
 using Rewards.DataContract;
 
 namespace FoodaryRewardsAPI.Controllers
@@ -11,13 +12,22 @@ namespace FoodaryRewardsAPI.Controllers
     [ApiController]
     public class RewardsController : ControllerBase
     {
-   
+        private readonly IRewardsService _discountService;
+        //private readonly IPointsPromotionService _pointsPromotionService;
+
+        public RewardsController(IRewardsService discountService)
+        {
+            _discountService = discountService ?? throw new ArgumentNullException(nameof(discountService));
+          //  _pointsPromotionService = pointsPromotionService ?? throw new ArgumentNullException(nameof(pointsPromotionService));
+        }
 
         // POST api/values
         [HttpPost]
-        public RewardsResponse Post([FromBody] RewardsRequest request)
+        public ActionResult Post([FromBody] RewardsRequest request)
         {
-            throw new NotImplementedException();
+            var response = new RewardsResponse();
+            _discountService.Calculate(request, response);
+            return Ok(response); 
         }
 
      

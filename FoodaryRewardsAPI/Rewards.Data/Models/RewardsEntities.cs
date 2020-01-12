@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,11 +12,23 @@ namespace Rewards.Data.Models
         public DbSet<PointsPromotion> PointsPromotions { get; set; }
         public DbSet<DiscountPromotion> DiscountPromotions { get; set; }
         public DbSet<DiscountPromotionProduct> DiscountPromotionProducts { get; set; }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=.\SqlExpress01;Initial Catalog=StoreDB;Integrated Security=true;");
-            optionsBuilder.EnableSensitiveDataLogging();
+            var dbConnectionString = GetConnectionString();
+            optionsBuilder.UseSqlServer(dbConnectionString);
         }
+
+        private static string GetConnectionString()
+        {
+            var builder = new ConfigurationBuilder();
+            builder.AddJsonFile("appsettings.json", optional: false);
+
+            var configuration = builder.Build();
+            return configuration.GetConnectionString("DBConnection");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

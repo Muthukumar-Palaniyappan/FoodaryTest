@@ -14,6 +14,9 @@ using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.OpenApi.Models;
 using Rewards.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using Rewards.Business.Interfaces;
+using Rewards.Business;
+using Rewards.Data.Repositories;
 
 namespace FoodaryRewardsAPI
 {
@@ -35,6 +38,10 @@ namespace FoodaryRewardsAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
             services.AddDbContext<RewardsEntities>();
+            services.AddScoped<IRewardsService, RewardsService>();
+            services.AddScoped<IDiscountRepository, DiscountRepository>();
+            services.AddScoped<IPointsPromotionRepository, PointsPromotionRepository>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

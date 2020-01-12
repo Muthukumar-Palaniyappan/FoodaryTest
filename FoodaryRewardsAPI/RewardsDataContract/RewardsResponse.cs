@@ -7,9 +7,9 @@ namespace Rewards.DataContract
         public Guid CustomerId { get; set; }
         public string LoyaltyCard { get; set; }
         public string TransactionDate { get; set; }
-        public string TotalAmount { get; set; }
-        public string DiscountApplied { get; set; }
-        public string GrandTotal { get; set; }
-        public string PointsEarned { get; set; }
+        public decimal TotalAmount { get; set; }
+        public decimal DiscountApplied { get; set; }
+        public decimal GrandTotal { get; set; }
+        public decimal PointsEarned { get; set; }
     }
 }
