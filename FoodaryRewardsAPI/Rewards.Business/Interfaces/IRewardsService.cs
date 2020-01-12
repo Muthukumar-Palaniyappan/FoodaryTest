@@ -7,6 +7,6 @@ namespace Rewards.Business.Interfaces
 {
     public interface IRewardsService
     {
-        void Calculate(RewardsRequest requestData, RewardsResponse response);
+        RewardsResponse Calculate(RewardsRequest requestData);
     }
 }

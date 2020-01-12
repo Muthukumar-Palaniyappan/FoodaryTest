@@ -18,13 +18,14 @@ namespace Rewards.Business
             _pointsPromotionRepository = pointsPromotionRepository ?? throw new ArgumentNullException(nameof(pointsPromotionRepository));
         }
 
-        public void Calculate(RewardsRequest requestData, RewardsResponse response)
+        public RewardsResponse Calculate(RewardsRequest requestData)
         {
+            var response = new RewardsResponse() { CustomerId = requestData.CustomerId, TransactionDate = requestData.TransactionDate, LoyaltyCard = requestData.LoyaltyCard };
                 var discountedProducts = _discountRepository.GetDiscountedProducts(requestData);
-                var productsInBasket = _discountRepository.GetProductsInBasket(requestData);
+                var productsRetrieved = _discountRepository.GetProductsInBasket(requestData);
                 var productWithPoints = _pointsPromotionRepository.GetProductPoints(requestData);
 
-            foreach (var item in productsInBasket)
+            foreach (var item in productsRetrieved)
                 {
                     var discountpercent = discountedProducts.FirstOrDefault(p => p.ProductId == item.ProductId)?.DiscountPercent??0;
                     var discountedValue = discountpercent*item.UnitPrice*item.Quantity / 100;
@@ -39,6 +40,7 @@ namespace Rewards.Business
                     response.PointsEarned += netPrice * PromotionPoints; 
 
             }
+            return response;
         }
     }
 }

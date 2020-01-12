@@ -25,8 +25,7 @@ namespace FoodaryRewardsAPI.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] RewardsRequest request)
         {
-            var response = new RewardsResponse();
-            _discountService.Calculate(request, response);
+            var response = _discountService.Calculate(request);
             return Ok(response); 
         }
 

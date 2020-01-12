@@ -13,3 +13,5 @@
 /FoodaryRewardsAPI/Rewards.Data/bin/Debug/netcoreapp2.1
 /FoodaryRewardsAPI/Rewards.Business/bin/Debug/netcoreapp2.1
 /FoodaryRewardsAPI/Rewards.Business/obj
+/FoodaryRewardsAPI/Rewards.Business.Tests/bin/Debug/netcoreapp2.1
+/FoodaryRewardsAPI/Rewards.Business.Tests/obj
